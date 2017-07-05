@@ -5,6 +5,11 @@
 
 ## 機能要件
 
+### 開発要件
+- どこでも同じ環境にしたいのでDockerにしたい感ある
+  - herokuもdockerで
+  - [](http://qiita.com/mpppk/items/cab82ec97fad37867eba)
+
 ## new
 ``` rails new suggest_dinner -d postgresql -M -B -T ```
 
