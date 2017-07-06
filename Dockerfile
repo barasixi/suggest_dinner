@@ -1,6 +1,6 @@
 FROM ruby:2.4.1
 
-MAINTAINER Nozomi Tanaka <barasixi@gmail.com>
+MAINTAINER Nozomi Tanaka <>
 
 ENV APP_ROOT /usr/src/suggest_dinner
 
