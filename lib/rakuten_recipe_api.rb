@@ -1,7 +1,6 @@
 class RakutenRecipeApi
   include HTTParty
-  base_uri 'http://app.rakuten.co.jp'
-  API_VERSION = '20170426'
+  base_uri 'https://app.rakuten.co.jp'
   APPLICATION_ID = '1051268512031928332'
 
 # sample
@@ -16,7 +15,7 @@ class RakutenRecipeApi
 #         categoryId=10
   def self.get_recipes
     query = {applicationId: APPLICATION_ID, categoryId: 10}
-    res = get("/services/api/Recipe/CategoryRanking/" + API_VERSION, query)
+    res = get("/services/api/Recipe/CategoryRanking/20170426", query: query)
 
     #     merged_query = default_query.merge!(query)
     # res = get("/master/AreaSearchAPI/20150630", query: merged_query)
