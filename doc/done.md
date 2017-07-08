@@ -1,5 +1,9 @@
 done.md
 
+## HTTparty入らぬ問題
+- json gemがruby2.4.0に対応しとらん
+  - githubで最新指定する
+
 ## docker
 - Dockerで開発環境
 - 参考

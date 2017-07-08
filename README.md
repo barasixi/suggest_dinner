@@ -21,5 +21,8 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+- git push heroku master:master
+- heroku run rake db:migrate
+
 
 * ...
