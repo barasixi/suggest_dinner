@@ -10,6 +10,11 @@
 ## 画像素材元
 - http://www.irasutoya.com/
 
+- http://design-ec.com/?p=197
+  - 星素材
+
+## つらみとこ
+- herokuにあげたらhttpsが叩けぬ
 
 
 ### 開発要件
