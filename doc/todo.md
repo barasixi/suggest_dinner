@@ -7,6 +7,11 @@
 ## 機能要件
 - LINEでもらった
 
+## 画像素材元
+- http://www.irasutoya.com/
+
+
+
 ### 開発要件
 - どこでも同じ環境にしたいのでDockerにしたい感ある
   - herokuもdockerで

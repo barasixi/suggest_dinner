@@ -1,7 +1,6 @@
 class TopController < ApplicationController
   def index
-    @test = RakutenRecipeApi.get_recipes
-
-    p @test
+    recipes = RakutenRecipe.get_data(RakutenRecipe.categories[:meet])
+    @recipes = recipes.sample(3)
   end
 end

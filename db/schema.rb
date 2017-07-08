@@ -10,9 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170708062448) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "rakuten_recipes", force: :cascade do |t|
+    t.integer  "recipeId"
+    t.string   "recipeTitle"
+    t.string   "recipeUrl"
+    t.string   "foodImageUrl"
+    t.string   "mediumImageUrl"
+    t.string   "smallImageUrl"
+    t.integer  "pickup"
+    t.integer  "shop"
+    t.string   "nickname"
+    t.string   "recipeDescription"
+    t.string   "recipeMaterial"
+    t.string   "recipeIndication"
+    t.string   "recipeCost"
+    t.string   "rank"
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
+    t.integer  "category",          limit: 2, default: 0, null: false
+  end
 
 end
