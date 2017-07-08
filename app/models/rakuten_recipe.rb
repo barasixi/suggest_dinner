@@ -25,6 +25,12 @@ class RakutenRecipe < ApplicationRecord
 
   enum category: { invalid_param: 0, meet: 1, fish: 2, vegetable: 3 }
 
+  def self.random_label
+    labels = ["handmade", "chance", "latest", "quality"]
+    label = labels.sample
+    label += ".png"
+  end
+
   def self.get_data(category)
     RakutenRecipe.where(category: category)
   end

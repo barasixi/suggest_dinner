@@ -28,6 +28,9 @@
                   <%= recipe.recipeMaterial %>
                 </td>
                 <tr>
+                <td>
+                  <%= image_tag(RakutenRecipe.random_label, alt: "アイコン", size: "192x96") %>
+                </td>
                 <td colspan=2>
                   <% recipe.rank.to_i.times do %>
                     <%= image_tag("star.png", :alt => "アイコン", :size => "64x64") %>
